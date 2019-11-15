@@ -11,11 +11,11 @@
 
 body {
   font-family: 'Jomolhari', serif !important;
-  
   color: var(--mainDark) !important;
-  background-image: url('https://cdn.pixabay.com/photo/2017/07/28/14/10/background-2548758_960_720.jpg') !important;
+  background-image: url('https://cdn.pizap.com/pizapfiles/images/photo_backgrounds_textures_app05.jpg') !important;
   background-repeat: no-repeat, repeat;
-  background-size: cover
+  background-size: cover;
+  
 }
 .text-title {
   font-family: 'Yeon Sung', cursive;

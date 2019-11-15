@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import { ProductConsumer } from "../context";
 import { ButtonContainer } from "./Button";
@@ -29,11 +28,11 @@ export default class Details extends Component {
               {/* end of title */}
               <div className="row">
                 <div className="col-10 mx-auto col-md-6 my-3">
-                  <img src={img} className="img-fluid" alt="product" />
+                  <img src={img} className="img-fluid" alt="" />
                 </div>
                 {/* prdoduct info */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                  <h1>model : {title}</h1>
+                  <h2>model : {title}</h2>
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                     made by : <span className="text-uppercase">{company}</span>
                   </h4>
@@ -44,7 +43,7 @@ export default class Details extends Component {
                     </strong>
                   </h4>
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                    some info about product :
+                    Info about product :
                   </p>
                   <p className="text-muted lead">{info}</p>
                   {/* buttons */}
@@ -53,11 +52,12 @@ export default class Details extends Component {
                       <ButtonContainer>back to products</ButtonContainer>
                     </Link>
                     <ButtonContainer
-                      cart
+                    cart
                       disabled={inCart ? true : false}
                       onClick={() => {
                         value.addToCart(id);
                         value.openModal(id);
+                        
                       }}
                     >
                       {inCart ? "in cart" : "add to cart"}

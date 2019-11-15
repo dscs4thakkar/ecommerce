@@ -28,11 +28,10 @@ export default class Product extends Component {
                   >
                     {inCart ? (
                       <p className="text-capitalize mb-0" disabled>
-                        {" "}
                         in cart
                       </p>
                     ) : (
-                      <i className="fas fa-cart-plus" />
+                      <img className="cartlogo" src="https://png.pngtree.com/element_our/sm/20180620/sm_5b29c1dab1cf4.png" />
                     )}
                   </button>
                 </div>
@@ -54,7 +53,7 @@ export default class Product extends Component {
 
 const ProductWrapper = styled.div`
   .card {
-    border-color: transparent;
+    border-color: var(--mainBlue);
     transition: all 1s linear;
   }
   .card-footer {
@@ -85,14 +84,14 @@ const ProductWrapper = styled.div`
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 0.2rem 0.4rem;
+    padding: 0px;
     background: var(--lightBlue);
     border: none;
     color: var(--mainWhite);
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);
@@ -100,5 +99,9 @@ const ProductWrapper = styled.div`
   .cart-btn:hover {
     color: var(--mainBlue);
     cursor: pointer;
+  }
+  .cartlogo {
+width:60px
+height: 60px
   }
 `;
