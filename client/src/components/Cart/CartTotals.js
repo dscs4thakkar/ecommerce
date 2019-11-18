@@ -37,7 +37,6 @@ export default function CartTotals({ value, history }) {
               <span className="text-title"> Total :</span>{" "}
               <strong>$ {cartTotal} </strong>
             </h5>
-       
           </div>
           
             
